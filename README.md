@@ -12,6 +12,6 @@ Edit and run `train_config.ipynb`:
 
 ## dataset
 
-| `trainsamples`  | 10 | 100 | 1.000 | 10.000 |
-|:--------------- | --:| ---:| -----:| ------:|
-| `--maxshards`   |  1 |  10 |    19 |     28 |
+| `train set`  | 280 |
+|:--------------- | --:|
+| `test set`   |  70 |
