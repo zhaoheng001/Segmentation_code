@@ -8,7 +8,7 @@ Edit and run `train_config.ipynb`:
 
  - `train_path`, `train_label`: local training images and masks.
  - `test_path`, `test_label`: local test images and masks.
- - `model_path` : load pre-trained mmodel path.
+ - `model_path` : load pre-trained model path.
 
 ## dataset
 
