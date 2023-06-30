@@ -16,7 +16,7 @@ Edit and run `train_config.ipynb`:
 |:--------------- |----|----:|
 | # |  280 | 70 |
 
--`data/image_train_256`: train images rescaled to 256x256
--`data/mask_train_256`: train masks rescaled to 256x256
--`data/image_test_256`: test images rescaled to 256x256
--`data/mask_test_256`: test masks rescaled to 256x256
+- `data/image_train_256`: train images rescaled to 256x256
+- `data/mask_train_256`: train masks rescaled to 256x256
+- `data/image_test_256`: test images rescaled to 256x256
+- `data/mask_test_256`: test masks rescaled to 256x256
