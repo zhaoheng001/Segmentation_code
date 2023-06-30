@@ -12,6 +12,6 @@ Edit and run `train_config.ipynb`:
 
 ## dataset
 
-| `train set`  | 280 |
+| train set  | 280 |
 |:--------------- | --:|
-| `test set`   |  70 |
+| test set   |  70 |
