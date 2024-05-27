@@ -33,7 +33,7 @@ Download pret-rained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/
 `pip install -r requirements.txt`
 
 ## train and test script
-Edit and run `train_config.ipynb`:
+Edit and run `train_test_demo.ipynb`:
 
  - `train_path`, `train_label`: local training images and masks.
  - `test_path`, `test_label`: local test images and masks.
