@@ -1,7 +1,7 @@
 # Segmentation_code
 
 ## pre-trained model
-Download pret-rained model `Model_GESU_oct17.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
+Download pret-rained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
 
 ## Install requirements
 `pip install -r requirements.txt`
