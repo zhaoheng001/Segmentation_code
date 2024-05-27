@@ -1,7 +1,7 @@
 # Segmentation_code
 ## System Requirements
 ### OS Requirements
-This package is supported for macOS and Linux. The package has been tested on the following systems:
+This code is supported for macOS and Linux. The package has been tested on the following systems:
 - macOS: Monterey (12.6.8)
 - Linux: Ubuntu 16.04
 ### Python Dependencies
@@ -18,7 +18,7 @@ tensorflow==2.8.0
 protobuf == 3.20.1
 ```
 ### Install dependencies
-Dependencies can be installed by `requirements.txt`
+Dependencies can be installed by `pip install -r requirements.txt`
 
 
 
