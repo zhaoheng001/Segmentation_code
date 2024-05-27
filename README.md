@@ -5,9 +5,8 @@ This code is supported for macOS and Linux. The package has been tested on the f
 - macOS: Monterey (12.6.8)
 - Linux: Ubuntu 16.04
 - Python 3.9.16
-### Python Dependencies
 
-
+### Python dependencies and installation
 ```
 keras==2.8.0
 matplotlib==3.3.2
@@ -25,19 +24,22 @@ Dependencies can be installed by `pip install -r requirements.txt`
 
 
 
-
-## pre-trained model
-Download pret-rained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
-
-## Install requirements
-`pip install -r requirements.txt`
-
-## train and test script
+## Demo
+- unzip `data.zip`
+- Download pre-trained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
+- 
+## Run train and test script
 Edit and run `train_test_demo.ipynb`:
-
- - `train_path`, `train_label`: local training images and masks.
- - `test_path`, `test_label`: local test images and masks.
- - `model_path` : load pre-trained model path.
+- set data and model path:
+  - `train_path`, `train_label`: local training images and masks.
+  - `test_path`, `test_label`: local test images and masks.
+  - `model_path` : load pre-trained model path.
+- training code:
+```python
+>>> GESU_net = myGESUnet(img_rows = 256, img_cols= 256, train_path=train_path, train_label=train_label, test_path=test_path, test_label=test_label)
+>>> GESU_net.load_data()
+>>> GESU_net.train(epochs, batches, model_path)
+```
 
 ## dataset
 
