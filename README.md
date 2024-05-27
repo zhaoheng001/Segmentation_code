@@ -17,6 +17,9 @@ scikit-image==0.22.0
 tensorflow==2.8.0
 protobuf == 3.20.1
 ```
+### Install dependencies
+Dependencies can be installed by `requirements.txt`
+
 
 
 
