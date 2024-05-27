@@ -34,11 +34,20 @@ Edit and run `train_test_demo.ipynb`:
   - `train_path`, `train_label`: local training images and masks.
   - `test_path`, `test_label`: local test images and masks.
   - `model_path` : load pre-trained model path.
-- training code:
+- training part:
 ```python
 >>> GESU_net = myGESUnet(img_rows = 256, img_cols= 256, train_path=train_path, train_label=train_label, test_path=test_path, test_label=test_label)
 >>> GESU_net.load_data()
 >>> GESU_net.train(epochs, batches, model_path)
+```
+If you use the pre-trained model, just commented out `GESU_net.train(epochs, batches, model_path)` and then run test part
+- test part:
+```python
+>>> model = myGESUnet(img_rows = 256, img_cols= 256, train_path=train_path, train_label=train_label, test_path=test_path, test_label=test_label)
+imgs_train, imgs_mask_train, imgs_test = model.load_data()
+>>> model.load_weights(os.path.join(model_path, "Model_GESU_oct16.hdf5"))
+>>> imgs_mask_test = model.predict(imgs_test[:,:,:,0], batch_size=1, verbose=1)
+>>> np.save('imgs_mask_test.npy', imgs_mask_test)
 ```
 
 ## dataset
