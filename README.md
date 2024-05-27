@@ -51,3 +51,8 @@ U-Net need fixed input size. So we rescale images and masks to 256x256.
 - `data/mask_train_256`: train masks rescaled to 256x256
 - `data/image_test_256`: test images rescaled to 256x256
 - `data/mask_test_256`: test masks rescaled to 256x256
+
+## Examples
+
+
+
