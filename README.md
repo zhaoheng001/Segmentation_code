@@ -4,7 +4,7 @@
 This code is supported for macOS and Linux. The package has been tested on the following systems:
 - macOS: Monterey (12.6.8)
 - Linux: Ubuntu 16.04
-- Python < 3.10
+- Python < 3.9
 ### Python Dependencies
 
 
