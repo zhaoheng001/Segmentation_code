@@ -55,7 +55,7 @@ U-Net need fixed input size. So we rescale images and masks to 256x256.
 ## Examples
 ![example1](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result1.png)
 ![example2](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result2.png)
-![example2](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result2.png)
+![example3](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result3.png)
 
 
 
