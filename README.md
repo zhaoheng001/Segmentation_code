@@ -1,4 +1,12 @@
 # Segmentation_code
+## System Requirements
+### OS Requirements
+This package is supported for macOS and Linux. The package has been tested on the following systems:
+- macOS: Monterey (12.6.8)
+- Linux: Ubuntu 16.04
+### Python Dependencies
+
+
 
 ## pre-trained model
 Download pret-rained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
