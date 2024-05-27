@@ -25,10 +25,23 @@ Dependencies can be installed by `pip install -r requirements.txt`
 
 
 ## Demo
+### Dataset
 - unzip `data.zip`
+- dataset:
+| dataset  | train | test |
+|:--------------- |----|----:|
+| # |  280 | 70 |
+
+U-Net need fixed input size. So we rescale images and masks to 256x256.
+
+- `data/image_train_256`: train images rescaled to 256x256
+- `data/mask_train_256`: train masks rescaled to 256x256
+- `data/image_test_256`: test images rescaled to 256x256
+- `data/mask_test_256`: test masks rescaled to 256x256
+
 - Download pre-trained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
 - 
-## Run train and test script
+### Run train and test script
 Edit and run `train_test_demo.ipynb`:
 - set data and model path:
   - `train_path`, `train_label`: local training images and masks.
@@ -49,19 +62,6 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 >>> imgs_mask_test = model.predict(imgs_test[:,:,:,0], batch_size=1, verbose=1)
 >>> np.save('imgs_mask_test.npy', imgs_mask_test)
 ```
-
-## dataset
-
-| dataset  | train | test |
-|:--------------- |----|----:|
-| # |  280 | 70 |
-
-U-Net need fixed input size. So we rescale images and masks to 256x256.
-
-- `data/image_train_256`: train images rescaled to 256x256
-- `data/mask_train_256`: train masks rescaled to 256x256
-- `data/image_test_256`: test images rescaled to 256x256
-- `data/mask_test_256`: test masks rescaled to 256x256
 
 ## Examples
 ![example1](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result1.png)
