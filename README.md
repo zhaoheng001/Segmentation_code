@@ -5,6 +5,18 @@ This package is supported for macOS and Linux. The package has been tested on th
 - macOS: Monterey (12.6.8)
 - Linux: Ubuntu 16.04
 ### Python Dependencies
+```
+keras==2.8.0
+matplotlib==3.3.2
+numpy==1.26.4
+opencv_python==4.5.5.64
+Pillow==10.0.0
+scikit_learn==1.5.0
+scipy==1.13.1
+scikit-image==0.22.0
+tensorflow==2.8.0
+protobuf == 3.20.1
+```
 
 
 
