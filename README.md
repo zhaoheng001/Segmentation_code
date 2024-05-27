@@ -25,6 +25,7 @@ Dependencies can be installed by `pip install -r requirements.txt`
 
 
 ## Demo
+
 ### Dataset
 - unzip `data.zip`
 - dataset:
@@ -40,8 +41,10 @@ U-Net need fixed input size. So we rescale images and masks to 256x256.
 - `data/image_test_256`: test images rescaled to 256x256
 - `data/mask_test_256`: test masks rescaled to 256x256
 
-- Download pre-trained model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
-- 
+### Download pre-trained model
+
+- Download model `Model_GESU_oct16.hdf5` from https://www.dropbox.com/scl/fi/1twwtxwpksqy43x25739k/Model_GESU_oct16.hdf5?rlkey=dybz3tun4etuayv1q994gudpg&dl=0
+
 ### Run train and test script
 Edit and run `train_test_demo.ipynb`:
 - set data and model path:
