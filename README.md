@@ -79,7 +79,7 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 - Using the inference part in `train_test_demo.ipynb`, and the pre-trained model `Model_GESU_oct16.hdf5`, we can segment the whole 6821 single astrocyte images. Segmented images stored in `segmentation_mask_data/single_mask.zip`. After resizing to original size, and place patches to the original location, we generate the entire masks, which stored in `segmentation_mask_data/entire_mask.zip`.
 
 
-## Examples
+## Segmentation examples
 ![example1](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result1.png)
 ![example2](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result2.png)
 ![example3](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result3.png)
