@@ -26,8 +26,8 @@ Dependencies can be installed by `pip install -r requirements.txt`
 
 ## Demo
 
-### Dataset
-- unzip `data.zip`
+### Training and test dataset
+- unzip `\data\train_test_data.zip`
 - dataset:
 
 | dataset  | train | test |
