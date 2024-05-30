@@ -66,6 +66,14 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 >>> imgs_mask_test = model.predict(imgs_test[:,:,:,0], batch_size=1, verbose=1)
 >>> np.save('imgs_mask_test.npy', imgs_mask_test)
 ```
+### Do segmentation on the whole single images
+We extract 6822 single astrocyte images from the detection result. According to their regions `ac, dm, lat, m, pc` and conditions `control, relapse, withdraw`, we labeled the subfolder names by `region` + `condition`. Here we summarize the number of each class:
+| region\condition  | ac | dm | lat | m | pc |
+|:--------------- |----|----|----|----|----:|
+| control |  326 | 197 | 197 | 281 | 735 |
+| withdraw | 197 | 908 | 908 | 908| 500 |
+|relapse | 181 | 759 | 759 | 759 | 488 |
+
 
 ## Examples
 ![example1](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result1.png)
