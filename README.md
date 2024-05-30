@@ -76,7 +76,8 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 |relapse | 181 | 759 | 759 | 759 | 488 | 2084 |
 | total (region) | 704 | 2699 | 969 | 969 | 1723 | 6821 (total) |
 
-- Using the inference part in `train_test_demo.ipynb`, and the pre-trained model `Model_GESU_oct16.hdf5`, we can segment the whole 6821 single astrocyte images. Segmented images stored in `segmentation_mask_data/single_mask.zip`. After resizing to original size, and place patches to the original location, we generate the entire masks, which stored in `segmentation_mask_data/entire_mask.zip`.
+- Using the inference part in `train_test_demo.ipynb`, and the pre-trained model `Model_GESU_oct16.hdf5`, we can segment the whole 6821 single astrocyte images.
+- Segmented images stored in `segmentation_mask_data/single_mask.zip`. After resizing to original size, and place patches to the original location, we generate the entire masks, which stored in `segmentation_mask_data/entire_mask.zip`.
 
 
 ## Segmentation examples
