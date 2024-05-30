@@ -67,13 +67,14 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 >>> np.save('imgs_mask_test.npy', imgs_mask_test)
 ```
 ### Do segmentation on the whole single images
-We extract 6822 single astrocyte images from the detection result. According to their regions `ac, dm, lat, m, pc` and conditions `control, relapse, withdraw`, we labeled the subfolder names by `region` + `condition`. Here we summarize the number of each class:
+- We extract 6821 single astrocyte images from the detection result. According to their regions `ac, dm, lat, m, pc` and conditions `control, relapse, withdraw`, we labeled the subfolder names by `region` + `condition`. Here we summarize the number of each class:
 | region\condition  | ac | dm | lat | m | pc | total (condition) |
 |:--------------- |----|----|----|----|----|----:|
 | control |  326 | 197 | 197 | 281 | 735 | 2696 |
 | withdraw | 197 | 908 | 908 | 908| 500 | 2041 |
 |relapse | 181 | 759 | 759 | 759 | 488 | 2084 |
 | total (region) | 704 | 2699 | 969 | 969 | 1723 | 6821 (total) |
+- Using the inference part in `train_test_demo.ipynb`, and the pre-trained model `Model_GESU_oct16.hdf5`, we can segment the whole 6821 single astrocyte images. Segmented images stored in `segmentation_mask_data/single_mask.zip`. After resizing to original size, and place patches to the original location, we generate the entire masks, which stored in `segmentation_mask_data/entire_mask.zip`.
 
 
 ## Examples
