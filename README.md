@@ -68,11 +68,12 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 ```
 ### Do segmentation on the whole single images
 We extract 6822 single astrocyte images from the detection result. According to their regions `ac, dm, lat, m, pc` and conditions `control, relapse, withdraw`, we labeled the subfolder names by `region` + `condition`. Here we summarize the number of each class:
-| region\condition  | ac | dm | lat | m | pc |
-|:--------------- |----|----|----|----|----:|
-| control |  326 | 197 | 197 | 281 | 735 |
-| withdraw | 197 | 908 | 908 | 908| 500 |
-|relapse | 181 | 759 | 759 | 759 | 488 |
+| region\condition  | ac | dm | lat | m | pc | total (condition) |
+|:--------------- |----|----|----|----|----|----:|
+| control |  326 | 197 | 197 | 281 | 735 | 2696 |
+| withdraw | 197 | 908 | 908 | 908| 500 | 2041 |
+|relapse | 181 | 759 | 759 | 759 | 488 | 2084 |
+| total (region) | 704 | 2699 | 969 | 969 | 1723 | 6821 (total) |
 
 
 ## Examples
