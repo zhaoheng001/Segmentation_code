@@ -85,7 +85,7 @@ imgs_train, imgs_mask_train, imgs_test = model.load_data()
 ![example3](https://github.com/zhaoheng001/Segmentation_code/blob/main/results/result3.png)
 
 ## Preprocessing of dataset
-- To get 6821 single astrocyte images, we need extract single astrocyte images from fluorescence microscope images with the bounding box information, included in file `astrocyte_json.json`.
-- 211 fluorescence microscope and `astrocyte_json.json` stored in https://www.dropbox.com/scl/fo/g7yrbf368luf7vbtu2v8h/ADZRH1FVewFH-hlZc5Air5U?rlkey=qk4qp9nqkb2tz54m9v9b8vl1s&st=ipt8ywjp&dl=0
+- To get 6821 single astrocyte images, we need extract single astrocyte images from 211 fluorescence microscope images with the bounding box information, included in file `astrocyte_json.json`.
+- 211 fluorescence microscope images and `astrocyte_json.json` stored in https://www.dropbox.com/scl/fo/g7yrbf368luf7vbtu2v8h/ADZRH1FVewFH-hlZc5Air5U?rlkey=qk4qp9nqkb2tz54m9v9b8vl1s&st=ipt8ywjp&dl=0
   
 
