@@ -1,7 +1,7 @@
 # Segmentation_code
 ## System Requirements
 ### OS Requirements
-This code is supported for macOS and Linux. The package has been tested on the following systems:
+The segmentation code has been tested on the following systems and Python version:
 - macOS: Monterey (12.6.8)
 - Linux: Ubuntu 16.04
 - Python 3.9.16
