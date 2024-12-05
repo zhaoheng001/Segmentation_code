@@ -20,6 +20,8 @@ tensorflow==2.8.0
 protobuf == 3.20.1
 ```
 ### Install dependencies
+Create virtual environment `conda create -n cell_seg python=3.9.16`
+conda activate `cell_seg`
 Dependencies can be installed by `pip install -r requirements.txt`
 
 
